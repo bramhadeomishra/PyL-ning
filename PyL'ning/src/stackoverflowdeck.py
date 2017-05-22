@@ -1,8 +1,8 @@
-from mylib import Fibonacci
+from mylib import Pallindrom
 #import mylib
 def main():
-    p=Fibonacci()
-    print ' ',p.rangeFibo(20) 
+    p=Pallindrom()
+    print p.isPallindrom("ihi") 
 #    mylib.main()   
 
 if __name__ == '__main__':

@@ -1,13 +1,30 @@
+class Pallindrom:
+    def isPallindrom(self,n): # Pallindrom check.
+        word=n;
+        op=word[::-1]
+        print word
+        print op
+        if op==word:
+            return True
+        else:
+            return False
+
 class Fibonacci:
-    def rangeFibo(self,n):
+    def rangeFibo(self,n): # return a list of fibonacci number less than n
+        fib=[]
+        a=0
+        l=1
         if n==0:
             return 0
         elif n==1:
             return 1
         else:
-            return (Fibonacci.rangeFibo(self,n-1)+Fibonacci.rangeFibo(self,n-2))
-
-
+            while (l<n+1):
+                fib.append(l)
+                t=l
+                l=a+l
+                a=t
+            return fib    
 
 class Prime:
     def isPrime(self,n): # Checks if number is prime
